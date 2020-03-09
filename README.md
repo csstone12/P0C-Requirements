@@ -7,7 +7,7 @@ Implement the following features using declarative solutions, update the data mo
 ##	Workflow
 *	Whenever a new account is created, create a task to reach out and welcome them.
 ##	Approval Process 
-*	A package has insurance and id listed as missing require an approval process to issue a payout if the value is over $100, and multiple approvers if over $1000.
+*	When a package has insurance and it is listed as missing require an approval process to issue a payout if the value is over $100, and multiple approvers if over $1000.
 ##	Process Builder
 *	Whenever a contact is created, if there is no account related to it, create an account based off the contact information.
 ##	Flow
