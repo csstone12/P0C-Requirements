@@ -1,0 +1,17 @@
+
+trigger TriggerP0C on Inhabitant__c (before insert, before update) {
+
+List<Contact> myContacts= [SELECT Name, phone, email FROM Contact];
+
+For (Inhabitant__c joe:Trigger.New){
+         for(Contact thisContact:myContacts){
+             if(joe.name == thisContact.name && joe.email == thisContact.email && joe.phone  == ThisContact.phone){
+                 joe.name = thisContact.name;
+                 joe.email = thisContact.email;
+                 joe.phone = thisContact.phone;                 
+             }
+         }
+}
+
+
+}
